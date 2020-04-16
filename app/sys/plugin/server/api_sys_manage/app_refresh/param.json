@@ -3,7 +3,9 @@
     "title": "应用刷新",
     "add": {
         "body": [
-            "user_id"
+            "user_id",
+            "time_create",
+            "time_update"
         ],
         "body_required": [
             "appid",
@@ -23,6 +25,8 @@
         "query_required": [],
         "body": [
             "user_id",
+            "time_create",
+            "time_update",
             "appid",
             "refresh_token"
         ],

@@ -37,7 +37,7 @@
         "money_min": "`money` >= {0}",
         "money_max": "`money` <= {0}",
         "coin_min": "`coin` >= {0}",
-        "coin_max": "`coin` <= {0}"
+        "coin_max": "`coin` <= {0}",
     },
     "query_default": {
         "user_id": "`user_id` = {user_id}"

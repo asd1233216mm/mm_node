@@ -207,10 +207,8 @@
             "title": "频道图标",
             "description": "",
             "type": "string",
-            "dataType": "text",
-            "string": {
-                "max": 0
-            }
+            "dataType": "varchar",
+            "string": {}
         },
         {
             "name": "url",
