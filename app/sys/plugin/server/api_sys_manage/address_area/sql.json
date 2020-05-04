@@ -12,7 +12,7 @@
         "display_min": "`display` >= {0}",
         "display_max": "`display` <= {0}",
         "name": "`name` like '%{0}%'",
-        "keyword": "(`name` like '%{0}%')"
+        "keyword": "(`name` like '%{0}%' || `city_id` in (select `city_id` from `sys_address_city` where `name` like '%{0}%'))"
     },
     "update": {
         "show_add": "`show` = `show` + {0}",

@@ -35,7 +35,7 @@
 									<th scope="row"><input type="checkbox" :checked="select_has(o[field])" @click="select_change(o[field])" /></th>
 									<th scope="row">{{ o[field] }}</th>
 									<td>
-										<span class="title">{{o.title}}</span>
+										<span class="title">{{ o.title }}</span>
 									</td>
 									<td>
 										<span class="state">{{ states[o.state] }}</span>
@@ -120,8 +120,8 @@ export default {
 				keyword: ''
 			},
 			form: {},
-			states:["出售中","预售中","已下架","已删除","已违规"],
-			availables:["不启用","启用"],
+			states: ['出售中', '预售中', '已下架', '已删除', '已违规'],
+			availables: ['不启用', '启用'],
 			// 视图模型
 			vm: {}
 		};

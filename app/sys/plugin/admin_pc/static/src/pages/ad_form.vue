@@ -11,25 +11,37 @@
 						<dd>
 							<mm_upload_img width="10rem" height="10rem" name="avatar" type="text" v-model="form.avatar"></mm_upload_img>
 						</dd>
-						<dt>昵称</dt>
+						<dt>顺序</dt>
 						<dd>
-							<mm_input type="text" v-model="form.nickname" desc="由2-16个字符组成"></mm_input>
+							<mm_number v-model="form.display"></mm_number>
 						</dd>
-						<dt>会员级别</dt>
+						<dt>城市</dt>
 						<dd>
-							<mm_select v-model="form.vip" :options="$to_kv(['',1,2,3,4,5])"></mm_select>
+							<mm_select v-model="form.city_id" :options="$to_kv(['',1,2,3,4,5])"></mm_select>
 						</dd>
-						<dt>管理级别</dt>
+						<dt>投放地区</dt>
 						<dd>
-							<mm_select v-model="form.gm" :options="$to_kv(['',1,2,3,4,5])"></mm_select>
+							<mm_select v-model="form.area_id" :options="$to_kv(['',1,2,3,4,5])"></mm_select>
 						</dd>
-						<dt>商户级别</dt>
+						<dt>用户</dt>
 						<dd>
-							<mm_select v-model="form.mc" :options="$to_kv(['',1,2,3,4,5])"></mm_select>
+							<mm_select v-model="form.user_id" :options="$to_kv(['',1,2,3,4,5])"></mm_select>
 						</dd>
-						<dt>个性签名</dt>
+						<dt>访客数</dt>
 						<dd>
-							<textarea v-model="form.signature" placeholder="由2-16个字符组成"></textarea>
+							<mm_number v-model="form.times_user" :min="0" :max="2147483647"></mm_number>
+						</dd>
+						<dt>访客上限</dt>
+						<dd>
+							<mm_number v-model="form.times_max" :min="0" :max="2147483647"></mm_number>
+						</dd>
+						<dt>展现量</dt>
+						<dd>
+							<mm_number v-model="form.times_show" :min="0" :max="2147483647" ></mm_number>
+						</dd>
+						<dt>点击量</dt>
+						<dd>
+							<mm_number v-model="form.times_click" :min="0" :max="2147483647" ></mm_number>
 						</dd>
 					</dl>
 					<footer>

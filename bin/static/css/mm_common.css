@@ -192,6 +192,8 @@ ol.mm_list li:nth-child(3)::before{background-color: #ff9000;}
 .th_id{min-width:4rem}
 .th_uin{min-width:12rem}
 .th_name{min-width:8rem}
+.th_area{min-width:12rem}
+.th_city{min-width:12rem}
 .th_type{min-width:6rem}
 .th_address{min-width:15rem}
 .th_username{min-width:10rem}

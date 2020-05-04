@@ -182,12 +182,6 @@
 		created() {
 			this.get_user();
 			var _this = this;
-			this.$get('~/apis/user/group?', null, function(json) {
-				if (json.result) {
-					_this.user_group.clear();
-					_this.user_group.addList(json.result.list)
-				}
-			});
 		}
 	}
 </script>

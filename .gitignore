@@ -92,3 +92,8 @@ sw.*
 
 #  mm app
 
+bin/static/doc/自动生成页面概念.doc
+config/development.json
+config/local.json
+config/production.json
+mm网址.txt
